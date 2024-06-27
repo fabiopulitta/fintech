@@ -93,10 +93,13 @@ section h2{
 .balance-box h3{
     font-size: .875rem;
 }
-
-
 footer p{
     font-size: 1.125rem;
     color: var(--white);
     line-height: 3.125rem;
+}
+@media screen and (min-width:1024px){
+    html{
+        font-size: 18px;
+    }    
 }
