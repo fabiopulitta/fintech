@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
@@ -13,63 +16,103 @@
         <div class="container">
             <div class="row justify-content-between text-center text-white">
                 <div class="col-2">
-                    <img src="assets/images/menu.svg" alt="">#
+                    <img src="assets/images/menu-hamburguer.svg" alt="" class="menu">
                 </div>
                 <div class="col">
-                    <img src="assets/images/logo.svg" alt="">#
+                    <img src="assets/images/logo-fintech.svg" alt="" class="logo">
                 </div>
                 <div class="col-2"></div>
             </div>
         </div>
     </header>
 
-    <div class="notification text-center">Parabéns! Suas finanças estão sob controle :)</div>
+    <div class="notification text-white text-center">Parabéns! Suas finanças estão sob controle :)</div>
     
     <main>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col">
-                    <p>Seu saldo atual é: R$ <span class="balance-txt">2.199,66</span></p>
+                    <p class="text-white text-center m-0 py-4">Seu saldo atual é: R$ <span class="balance-txt">2.199,66</span></p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col">
-                    <section class="incomes">
-                        <h2>Entradas de dinheiro</h2>
-                        <div class="bg-white rounded balance-box">
-                            <div class="container">
-                                <div class="row justify-content-between">
+                <div class="col px-4">
+                    <section class="incomes mb-4 mb-lg-5">
+                        <h2 class="text-white">Entradas de dinheiro</h2>
+                        <div class="bg-white balance-box">
+                            <div class="container py-4">
+                                <div class="row justify-content-between align-items-center pb-3">
                                     <div class="col-auto">
                                         <small>Últimos 30 dias</small>
-                                        <p>R$ <span class="inner-balance">7.547,35</span></p>
+                                        <div><small>R$</small> <span class="inner-balance positive">7.547,35</span></div>
                                     </div>
                                     <div class="col-auto">
-                                        <button>Cadastrar nova entrada</button>
+                                        <button class="btn btn-register">Cadastrar nova entrada</button>
                                     </div>
                                 </div>
                                 <h3>Suas últimas entradas</h3>
                                 <ul class="m-0 p-0">
                                     <li class="row border-bottom">
-                                        <div class="col-3">07/04/24</div>
-                                        <div class="col-6">Freela Showtime</div>
-                                        <div class="col-3">R$ 4.750,00</div>
+                                        <div class="col-auto">07/04/24</div>
+                                        <div class="col">Freela Showtime</div>
+                                        <div class="col-auto">R$ 4.750,00</div>
                                     </li>
                                     <li class="row border-bottom">
-                                        <div class="col-3">07/04/24</div>
-                                        <div class="col-6">Freela Showtime</div>
-                                        <div class="col-3">R$ 4.750,00</div>
+                                        <div class="col-auto">01/04/24</div>
+                                        <div class="col">Abono salarial</div>
+                                        <div class="col-auto">R$ 1.750,00</div>
                                     </li>
                                     <li class="row border-bottom">
-                                        <div class="col-3">07/04/24</div>
-                                        <div class="col-6">Freela Showtime</div>
-                                        <div class="col-3">R$ 4.750,00</div>
+                                        <div class="col-auto">22/03/24</div>
+                                        <div class="col">Venda de tênis enjoei</div>
+                                        <div class="col-auto">R$ 525,00</div>
                                     </li>
                                 </ul>
                                 <div class="row justify-content-between">
-                                    <div class="col-12 text-center py-3">
-                                        <button class="btn btn-outline-dark">Extrato completo</button>
+                                    <div class="col-12 text-center pt-3">
+                                        <button class="btn btn-outline-dark px-5 border-2">Extrato completo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="outcomes mb-4 mb-lg-5">
+                        <h2 class="text-white">Saídas de dinheiro</h2>
+                        <div class="bg-white balance-box">
+                            <div class="container py-4">
+                                <div class="row justify-content-between align-items-center pb-3">
+                                    <div class="col-auto">
+                                        <small>Últimos 30 dias</small>
+                                        <div><small>R$</small> <span class="inner-balance negative">- 5.347,69</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-register">Cadastrar nova saída</button>
+                                    </div>
+                                </div>
+                                <h3>Suas últimas saídas</h3>
+                                <ul class="m-0 p-0">
+                                    <li class="row border-bottom">
+                                        <div class="col-auto">07/04/24</div>
+                                        <div class="col">Dentista</div>
+                                        <div class="col-auto negative">- R$ 750,00</div>
+                                    </li>
+                                    <li class="row border-bottom">
+                                        <div class="col-auto">01/04/24</div>
+                                        <div class="col">Aluguel</div>
+                                        <div class="col-auto negative">- R$ 2.620,00</div>
+                                    </li>
+                                    <li class="row border-bottom">
+                                        <div class="col-auto">22/03/24</div>
+                                        <div class="col">Curso de inglês</div>
+                                        <div class="col-auto negative">- R$ 450,00</div>
+                                    </li>
+                                </ul>
+                                <div class="row justify-content-between">
+                                    <div class="col-12 text-center pt-3">
+                                        <button class="btn btn-outline-dark px-5 border-2">Extrato completo</button>
                                     </div>
                                 </div>
                             </div>
@@ -80,8 +123,14 @@
         </div>
     </main>
 
-    <footer>
-
+    <footer class="fixed-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col px-4">
+                    <p class="m-0">Fintech - 2024</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/bootstrap.min.js"></script>
