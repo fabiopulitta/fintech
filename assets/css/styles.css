@@ -1,0 +1,30 @@
+:root{
+    --black: #000;
+    --primary-color: #598D04;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #222;    
+}
+header{
+    background-color: var(--black);
+}
+main{
+
+}
+footer{
+
+}
+
+.notification{
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+.incomes h2, .outcomes h2{
+    color: #FFF;
+}
+.balance-box li{
+    font-size: .75rem;
+}
